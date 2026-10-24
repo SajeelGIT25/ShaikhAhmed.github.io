@@ -1,0 +1,29 @@
+/* 
+  Name: Sajeel Ahmed
+  File: style.css
+  Date: October 23, 2026
+  Style for stylling page
+*/
+/* H1 styling: bottom border 10px dotted purple */
+h1 {
+border-bottom: 10px dotted purple;
+}
+
+/* Level 2 headings in italic */
+h2 {
+font-style: italic;
+}
+
+/* Contact details list styling */
+ul.contact-info {
+background-color: #eeeeee;
+border: 5px solid purple;
+padding: 20px;
+list-style-type: square;
+}
+
+/* Link hover styling */
+a:hover {
+color: darkgreen;
+text-decoration: none;
+}
