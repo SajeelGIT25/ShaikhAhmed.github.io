@@ -1,0 +1,94 @@
+/*
+Name: Sajeel Ahmed
+File: part3_style.css
+Date: 26 October 2026
+Stylesheet for Part 3 Fundamental Layout Comprehension.
+*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Sticky navigation bar that locks to the top when scrolling */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background-color: #2c3e50;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Flexbox and justify-content for nav links */
+.sticky-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-nav li {
+  margin: 0;
+}
+
+.sticky-nav a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.sticky-nav a:hover {
+  background-color: #34495e;
+}
+
+/* Two-column layout grid for <article> and <aside> */
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+article {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+aside {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  height: fit-content;
+}
+
+/* Floated image with margins set in CSS */
+.article-float-img {
+  float: left;
+  margin: 0 20px 15px 0;
+  border-radius: 4px;
+}
+
+/* Photographs grid: two-column layout with a 5px gap */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 1.5rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
